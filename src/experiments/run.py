@@ -157,6 +157,7 @@ class Experiment:
                 nb_of_iterations=self.configs['nb_of_iterations'],
                 use_hide_n_reduce=self.configs['use_hide_n_reduce'],
                 init_decomp_file=init_decomp_file,
+                decomposition=self.configs['decomposition'],
                 model=model, log=log, model_fpath=model_fpath, log_fpath=log_fpath
             )
             configs_fpath = self.write_config_file(replay_id, configs)

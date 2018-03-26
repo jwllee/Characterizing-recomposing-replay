@@ -23,12 +23,12 @@ logger = logging.getLogger(__name__)
 
 class ReplayerConfiguration(object):
     HEADER = ['_id', 'LogPath', "ModelPath", 'Log', 'Model', 'Monolithic',
-          'GlobalDurationThreshold', 'LocalDurationThreshold',
-          'LogMoveCost', 'ModelMoveCost',
-          'RelativeIntervalThreshold', 'AbsoluteIntervalThreshold',
-          'MaxConflictThreshold', 'AlignmentPercentageThreshold',
-          'MaxIterationThreshold', 'CostIntervalLo', 'CostIntervalHi',
-          'FitnessLo', 'FitnessHi', 'IsReliable', 'TotalTimeTaken']
+              'Decomposition', 'GlobalDurationThreshold', 'LocalDurationThreshold',
+              'LogMoveCost', 'ModelMoveCost',
+              'RelativeIntervalThreshold', 'AbsoluteIntervalThreshold',
+              'MaxConflictThreshold', 'AlignmentPercentageThreshold',
+              'MaxIterationThreshold', 'CostIntervalLo', 'CostIntervalHi',
+              'FitnessLo', 'FitnessHi', 'IsReliable', 'TotalTimeTaken']
 
 
 class MonolithicReplayerConfiguration(ReplayerConfiguration):
@@ -67,7 +67,7 @@ class RecompositionReplayerConfiguration(ReplayerConfiguration):
                  global_duration, local_duration,
                  interval_relative, interval_absolute,
                  max_conflicts, alignment_percentage,
-                 nb_of_iterations, use_hide_n_reduce,
+                 nb_of_iterations, use_hide_n_reduce, decomposition,
                  init_decomp_file, model, log, model_fpath, log_fpath):
         self.replay_config = replay_config
         self.replay_id = replay_id
@@ -82,6 +82,7 @@ class RecompositionReplayerConfiguration(ReplayerConfiguration):
         self.alignment_percentage = alignment_percentage
         self.nb_of_iterations = nb_of_iterations
         self.use_hide_n_reduce = use_hide_n_reduce
+        self.decomposition = decomposition
         self.init_decomp_file = init_decomp_file
         self.model = model
         self.log = log
@@ -101,6 +102,7 @@ class RecompositionReplayerConfiguration(ReplayerConfiguration):
                       'alignmentPercentage': self.alignment_percentage,
                       'nofIterations': self.nb_of_iterations,
                       'useHideAndReduceAbstraction': self.use_hide_n_reduce,
+                      'decomposition': self.decomposition,
                       'initDecompFile': self.init_decomp_file,
                       'model': self.model,
                       'log': self.log,
