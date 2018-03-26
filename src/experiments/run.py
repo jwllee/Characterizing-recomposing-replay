@@ -188,7 +188,7 @@ if __name__ == '__main__':
     basedir = configs['basedir']
     result_dir = os.path.join(basedir, configs['result_dir'])
     outdir = ' '.join([dt, configs['experiment_name']])
-    outdir = os.path.join(configs['basedir'], result_dir, outdir)
+    outdir = os.path.join(result_dir, outdir)
     # need to make out directory
     os.makedirs(outdir)
 
