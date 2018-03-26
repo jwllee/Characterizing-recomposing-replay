@@ -141,6 +141,7 @@ class Experiment:
             # make initial decomposition filepath
             init_decomp_file = model + '.' + self.configs['decomposition']
             init_decomp_file = os.path.join(self.datadir, model, 'decomposition', init_decomp_file)
+            logger.info('Decomposition file: {}'.format(init_decomp_file))
             # create a configuration dict for RecompositionReplayer
             configs = RecompositionReplayerConfiguration(
                 replay_config=self.configs['replay_config'],
