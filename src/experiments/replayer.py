@@ -28,8 +28,7 @@ class MonolithicReplayer:
         self.prom_executor = prom_executor
 
     def replay(self):
-        pass
-
+        self.prom_executor.execute()
 
 class RecompositionReplayer:
     def __init__(self, configs, outdir, prom_executor):
@@ -38,5 +37,5 @@ class RecompositionReplayer:
         self.prom_executor = prom_executor
 
     def replay(self):
-        pass
+        self.prom_executor.execute()
 
