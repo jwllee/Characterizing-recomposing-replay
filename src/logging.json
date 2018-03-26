@@ -42,22 +42,27 @@
             "handlers": ["console"],
             "propagate": false
         },
-        "test_module": {
-            "level": "DEBUG",
-            "handlers": ["console"],
-            "propagate": false
-        },
         "experiments.run": {
             "level": "INFO",
             "handlers": ["console", "info_file_handler", "error_file_handler"],
             "propagate": false
         },
-        "experiments.replay": {
+        "experiments.executor": {
             "level": "INFO",
             "handlers": ["console", "info_file_handler", "error_file_handler"],
             "propagate": false
         },
         "experiments.replayer": {
+            "level": "INFO",
+            "handlers": ["console", "info_file_handler", "error_file_handler"],
+            "propagate": false
+        },
+        "experiments.configuration": {
+            "level": "INFO",
+            "handlers": ["console", "info_file_handler", "error_file_handler"],
+            "propagate": false
+        },
+        "experiments.utils": {
             "level": "INFO",
             "handlers": ["console", "info_file_handler", "error_file_handler"],
             "propagate": false
