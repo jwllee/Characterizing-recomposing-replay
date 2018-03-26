@@ -93,16 +93,18 @@ class Experiment:
             model_fpath = os.path.join(self.datadir, model, model_fpath)
             log_fpath = os.path.join(self.datadir, model, log_fpath)
             # create a configuration dict for MonolithicReplayer
-            configs = MonolithicReplayerConfiguration(self.configs['replay_config'],
-                                                     replay_id=replay_id,
-                                                     outfile=self.outfile,
-                                                     move_on_log_costs=self.configs['move_on_log_costs'],
-                                                     move_on_model_costs=self.configs['move_on_model_costs'],
-                                                     deadline=self.configs['deadline'],
-                                                     model=model,
-                                                     log=log,
-                                                     model_fpath=model_fpath,
-                                                     log_fpath=log_fpath)
+            configs = MonolithicReplayerConfiguration(
+                replay_config=self.configs['replay_config'],
+                replay_id=replay_id,
+                outfile=self.outfile,
+                move_on_log_costs=self.configs['move_on_log_costs'],
+                move_on_model_costs=self.configs['move_on_model_costs'],
+                deadline=self.configs['deadline'],
+                model=model,
+                log=log,
+                model_fpath=model_fpath,
+                log_fpath=log_fpath
+            )
             configs_fpath = self.write_config_file(replay_id, configs)
             logfile = self.make_logfile(replay_id)
             prom_executor = self.make_prom_executor(configs_fpath, logfile)
