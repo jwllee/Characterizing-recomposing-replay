@@ -14,7 +14,7 @@ __all__ = [ 'ProMPluginExecutor' ]
 
 
 to_add = os.path.abspath(__file__)
-to_add = to_add.split(os.sep)[:-2]
+to_add = to_add.split(os.sep)[:-3]
 sys.path.append(os.sep.join(to_add))
 
 

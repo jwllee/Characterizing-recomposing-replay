@@ -10,13 +10,14 @@ import argparse
 from datetime import datetime
 
 to_add = os.path.abspath(__file__)
-to_add = to_add.split(os.sep)[:-2]
+to_add = to_add.split(os.sep)[:-3]
 sys.path.append(os.sep.join(to_add))
 
+# print('System paths: {}'.format(sys.path))
 
-from .replayer import *
-from .configuration import *
-from .executor import *
+from src.experiments.replayer import *
+from src.experiments.configuration import *
+from src.experiments.executor import *
 from src.experiments import utils
 
 

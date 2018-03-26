@@ -8,11 +8,15 @@ This module does stuff.
 
 import csv
 from datetime import datetime as dt
-import logging, os, json
+import logging, os, json, sys
 import logging.config
 
 __author__ = "Wai Lam Jonathan Lee"
 __email__ = "walee@uc.cl"
+
+to_add = os.path.abspath(__file__)
+to_add = to_add.split(os.sep)[:-3]
+sys.path.append(os.sep.join(to_add))
 
 
 def writeheader(fpath, header):
