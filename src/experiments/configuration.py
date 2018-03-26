@@ -22,7 +22,7 @@ logger = logging.getLogger(__name__)
 
 
 class ReplayerConfiguration(object):
-    HEADER = ['Path', '_id', 'Model', 'Log', 'Monolithic',
+    HEADER = ['LogPath', "ModelPath", '_id', 'Log', 'Model', 'Monolithic',
           'GlobalDurationThreshold', 'LocalDurationThreshold',
           'LogMoveCost', 'ModelMoveCost',
           'RelativeIntervalThreshold', 'AbsoluteIntervalThreshold',
