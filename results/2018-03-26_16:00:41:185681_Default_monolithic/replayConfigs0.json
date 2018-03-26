@@ -1,0 +1,1 @@
+{"logPath": "../data/test/P307/L28.xes", "modelPath": "../data/test/P307/P307.apnml", "log": "L28", "deadline": 3600000, "moveOnLogCosts": 10, "moveOnModelCosts": 4, "outFile": "../results/2018-03-26_16:00:41:185681_Default_monolithic/results.csv", "iteration": 0, "configuration": "Do not decompose", "model": "P307"}
