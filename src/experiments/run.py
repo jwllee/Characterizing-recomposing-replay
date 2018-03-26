@@ -89,8 +89,8 @@ class Experiment:
         for replay_id, to_run in enumerate(data_list):
             model = to_run[0]
             log = to_run[1]
-            model_fpath = model + self.configs['model_ext']
-            log_fpath = log + self.configs['log_ext']
+            model_fpath = '.'.join([model, self.configs['model_ext']])
+            log_fpath = '.'.join([log, self.configs['log_ext']])
             model_fpath = os.path.join(self.datadir, model, model_fpath)
             log_fpath = os.path.join(self.datadir, model, log_fpath)
             # create a configuration dict for MonolithicReplayer
@@ -134,8 +134,8 @@ class Experiment:
         for replay_id, to_run in enumerate(data_list):
             model = to_run[0]
             log = to_run[1]
-            model_fpath = model + self.configs['model_ext']
-            log_fpath = log + self.configs['log_ext']
+            model_fpath = '.'.join([model, self.configs['model_ext']])
+            log_fpath = '.'.join([log, self.configs['log_ext']])
             model_fpath = os.path.join(self.datadir, model, model_fpath)
             log_fpath = os.path.join(self.datadir, model, log_fpath)
             # make initial decomposition filepath
