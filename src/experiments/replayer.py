@@ -28,7 +28,11 @@ class MonolithicReplayer:
         self.prom_executor = prom_executor
 
     def replay(self):
+        logger.info('Replaying by monolithic '
+                    'approach on {} (model) and {} (log)'
+                     .format(self.configs.model, self.configs.log))
         self.prom_executor.execute()
+        logger.info('Finished experiment')
 
 class RecompositionReplayer:
     def __init__(self, configs, outdir, prom_executor):
@@ -37,5 +41,9 @@ class RecompositionReplayer:
         self.prom_executor = prom_executor
 
     def replay(self):
+        logger.info('Replaying by recomposition '
+                    'approach on {} (model) and {} (log)'
+                    .format(self.configs.model, self.configs.log))
         self.prom_executor.execute()
+        logger.info('Finished experiment')
 
