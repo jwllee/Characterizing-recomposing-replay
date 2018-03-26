@@ -108,6 +108,7 @@ class Experiment:
             )
             configs_fpath = self.write_config_file(replay_id, configs)
             logfile = self.make_logfile(replay_id)
+            logfile = open(logfile, 'w')
             prom_executor = self.make_prom_executor(configs_fpath, logfile)
             # make replayer and replay
             replayer = MonolithicReplayer(configs=configs,
@@ -159,6 +160,7 @@ class Experiment:
             )
             configs_fpath = self.write_config_file(replay_id, configs)
             logfile = self.make_logfile(replay_id)
+            logfile = open(logfile, 'w')
             prom_executor = self.make_prom_executor(configs_fpath, logfile)
             # make replayer and replay
             replayer = RecompositionReplayer(configs=configs,
