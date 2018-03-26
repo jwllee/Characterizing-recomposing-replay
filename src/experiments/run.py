@@ -185,11 +185,11 @@ if __name__ == '__main__':
         configs = json.load(f)
 
     # get datetime
-    dt = datetime.now().strftime('%Y-%m-%d %H:%M:%S:%f')
+    dt = datetime.now().strftime('%Y-%m-%d_%H:%M:%S:%f')
     # make the out directory for this experiment
     basedir = configs['basedir']
     result_dir = os.path.join(basedir, configs['result_dir'])
-    outdir = ' '.join([dt, configs['experiment_name']])
+    outdir = '_'.join([dt, configs['experiment_name']])
     outdir = os.path.join(result_dir, outdir)
     # need to make out directory
     os.makedirs(outdir)
