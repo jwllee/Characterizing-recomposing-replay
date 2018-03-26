@@ -89,8 +89,7 @@ class RecompositionReplayerConfiguration(ReplayerConfiguration):
         self.log_fpath = log_fpath
 
     def as_dict(self):
-        json_dict = { 'configuration': self.replay_config,
-                      'iteration': self.replay_id,
+        json_dict = { 'iteration': self.replay_id,
                       'outFile': self.outfile,
                       'moveOnLogCosts': self.move_on_log_costs,
                       'moveOnModelCosts': self.move_on_model_costs,
