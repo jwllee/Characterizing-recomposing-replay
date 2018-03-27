@@ -114,3 +114,23 @@ fabric.properties
 # project specific
 2018-03-25 Old source files/
 2018-03-25 Old configurations/
+
+# configurations
+2018-03-24_small-2/
+IS2017/
+configs/Batch runner.sh
+
+# prom stuff
+prom-6.5.1/2018-03-26 packages/
+prom-6.5.1/ProM651_lib_052017/
+prom-6.5.1/packages_052017/
+prom-6.5.1/testMonolithicReplayBoot.jar
+prom-6.5.1/testRecomposingReplayBoot.jar
+
+# results
+results/2018-03-26 IS2017/
+
+# data
+data/synthetic/
+data/test/P307/dirty/
+data/test/net1/
