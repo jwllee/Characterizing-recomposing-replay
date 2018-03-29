@@ -66,6 +66,21 @@
             "level": "INFO",
             "handlers": ["console", "info_file_handler", "error_file_handler"],
             "propagate": false
+        },
+        "decompose.finder": {
+            "level": "INFO",
+            "handlers": ["console", "info_file_handler", "error_file_handler"],
+            "propagate": false
+        },
+        "decompose.decomposer": {
+            "level": "INFO",
+            "handlers": ["console", "info_file_handler", "error_file_handler"],
+            "propagate": false
+        },
+        "decompose.configuration": {
+            "level": "INFO",
+            "handlers": ["console", "info_file_handler", "error_file_handler"],
+            "propagate": false
         }
     },
 
