@@ -1,0 +1,13 @@
+{
+  "basedir": "..",
+  "datadir": "data/test",
+  "data_to_run": "configs/FindSharedActivities/default/toRun.txt",
+
+  "memory": 6,
+  "prom_jar": "ProM651.jar",
+  "plugin_jar": "2018-03-29_APN_decomposer_boot.jar",
+  "prom_pkg": "ProM651_lib",
+  "main_class": "org.processmining.experiments.boot.TestSharedActivitiesBoot",
+  "net_array_ext": "apna"
+
+}
