@@ -103,6 +103,13 @@ class Decomposer:
             unsplittable_fpath = os.path.join(self.datadir, model_dirname,
                                               'decomposition', fname, unsplittable_fpath)
 
+            if not os.path.exists(unsplittable_fpath):
+                # create an empty unsplittable file if it does not exists,
+                # assuming that there are no unsplittable activities
+                os.makedirs(os.path.join(self.datadir, model_dirname, 'decomposition', fname))
+                with open(unsplittable_fpath, 'w') as f:
+                    f.write('')
+
             # build configuration instance
             configs = DecomposerConfiguration(
                 net_fpath=model_fpath,
