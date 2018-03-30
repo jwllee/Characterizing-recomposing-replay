@@ -2,7 +2,7 @@
   "basedir": "..",
   "result_dir": "results",
   "datadir": "data/test",
-  "data_to_run": "configs/default/toRun.txt",
+  "data_to_run": "configs/default/Replay/toRun.txt",
   "experiment_name": "Default_monolithic",
 
   "memory": 6,

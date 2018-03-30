@@ -1,7 +1,7 @@
 {
   "basedir": "..",
   "datadir": "data/test",
-  "data_to_run": "configs/FindSharedActivities/default/toRun.txt",
+  "data_to_run": "configs/default/FindSharedActivities/toRun.txt",
 
   "memory": 6,
   "prom_jar": "ProM651.jar",
