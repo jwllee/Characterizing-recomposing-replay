@@ -11,7 +11,7 @@ import os, json, sys, logging
 __author__ = "Wai Lam Jonathan Lee"
 __email__ = "walee@uc.cl"
 __all__ = [ 'MonolithicReplayerConfiguration', 'RecompositionReplayerConfiguration',
-            'ReplayerConfiguration']
+            'ReplayerConfiguration', 'RecompositionReplayerWithRecomposeStrategyConfiguration']
 
 to_add = os.path.abspath(__file__)
 to_add = to_add.split(os.sep)[:-3]
