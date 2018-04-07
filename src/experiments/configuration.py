@@ -28,7 +28,8 @@ class ReplayerConfiguration(object):
               'RelativeIntervalThreshold', 'AbsoluteIntervalThreshold',
               'MaxConflictThreshold', 'AlignmentPercentageThreshold',
               'MaxIterationThreshold', 'CostIntervalLo', 'CostIntervalHi',
-              'FitnessLo', 'FitnessHi', 'IsReliable', 'TotalTimeTaken']
+              'FitnessLo', 'FitnessHi', 'IsReliable', 'TotalTraces',
+              'RecompositionStepsTaken', 'TotalTimeTaken']
 
 
 class MonolithicReplayerConfiguration(ReplayerConfiguration):
