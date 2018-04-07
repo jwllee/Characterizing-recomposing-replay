@@ -143,23 +143,45 @@ class Experiment:
             init_decomp_file = os.path.join(self.datadir, model, 'decomposition', init_decomp_file)
             logger.info('Decomposition file: {}'.format(init_decomp_file))
             # create a configuration dict for RecompositionReplayer
-            configs = RecompositionReplayerConfiguration(
-                replay_config=self.configs['replay_config'],
-                replay_id=replay_id, outfile=self.outfile,
-                move_on_log_costs=self.configs['move_on_log_costs'],
-                move_on_model_costs=self.configs['move_on_model_costs'],
-                global_duration=self.configs['global_duration'],
-                local_duration=self.configs['local_duration'],
-                interval_relative=self.configs['interval_relative'],
-                interval_absolute=self.configs['interval_absolute'],
-                max_conflicts=self.configs['max_conflicts'],
-                alignment_percentage=self.configs['alignment_percentage'],
-                nb_of_iterations=self.configs['nb_of_iterations'],
-                use_hide_n_reduce=self.configs['use_hide_n_reduce'],
-                init_decomp_file=init_decomp_file,
-                decomposition=self.configs['decomposition'],
-                model=model, log=log, model_fpath=model_fpath, log_fpath=log_fpath
-            )
+            # do a simple check on configs to see which type of recomposition replayer configuration is required
+            if 'recompose_strategy' in self.configs:
+                configs = RecompositionReplayerWithRecomposeStrategyConfiguration(
+                    replay_config=self.configs['replay_config'],
+                    replay_id=replay_id, outfile=self.outfile,
+                    move_on_log_costs=self.configs['move_on_log_costs'],
+                    move_on_model_costs=self.configs['move_on_model_costs'],
+                    global_duration=self.configs['global_duration'],
+                    local_duration=self.configs['local_duration'],
+                    interval_relative=self.configs['interval_relative'],
+                    interval_absolute=self.configs['interval_absolute'],
+                    max_conflicts=self.configs['max_conflicts'],
+                    alignment_percentage=self.configs['alignment_percentage'],
+                    nb_of_iterations=self.configs['nb_of_iterations'],
+                    use_hide_n_reduce=self.configs['use_hide_n_reduce'],
+                    init_decomp_file=init_decomp_file,
+                    decomposition=self.configs['decomposition'],
+                    model=model, log=log, model_fpath=model_fpath, log_fpath=log_fpath,
+                    recompose_strategy=self.configs['recompose_strategy'],
+                    log_creation_strategy=self.configs['log_creation_strategy']
+                )
+            else:
+                configs = RecompositionReplayerConfiguration(
+                    replay_config=self.configs['replay_config'],
+                    replay_id=replay_id, outfile=self.outfile,
+                    move_on_log_costs=self.configs['move_on_log_costs'],
+                    move_on_model_costs=self.configs['move_on_model_costs'],
+                    global_duration=self.configs['global_duration'],
+                    local_duration=self.configs['local_duration'],
+                    interval_relative=self.configs['interval_relative'],
+                    interval_absolute=self.configs['interval_absolute'],
+                    max_conflicts=self.configs['max_conflicts'],
+                    alignment_percentage=self.configs['alignment_percentage'],
+                    nb_of_iterations=self.configs['nb_of_iterations'],
+                    use_hide_n_reduce=self.configs['use_hide_n_reduce'],
+                    init_decomp_file=init_decomp_file,
+                    decomposition=self.configs['decomposition'],
+                    model=model, log=log, model_fpath=model_fpath, log_fpath=log_fpath
+                )
             configs_fpath = self.write_config_file(replay_id, configs)
             logfile = self.make_logfile(replay_id)
             logfile = open(logfile, 'w')
