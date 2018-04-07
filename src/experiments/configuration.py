@@ -110,3 +110,18 @@ class RecompositionReplayerConfiguration(ReplayerConfiguration):
                       'modelPath': self.model_fpath,
                       'logPath': self.log_fpath }
         return json_dict
+
+
+class RecompositionReplayerWithRecomposeStrategyConfiguration(RecompositionReplayerConfiguration):
+
+    def __init__(self, recompose_strategy, log_creation_strategy, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.recompose_strategy = recompose_strategy
+        self.log_creation_strategy = log_creation_strategy
+
+    def as_dict(self):
+        json_dict = super().as_dict()
+        # add the two new parameters
+        json_dict['recomposeStrategy'] = self.recompose_strategy
+        json_dict['logCreationStrategy'] = self.log_creation_strategy
+        return json_dict
