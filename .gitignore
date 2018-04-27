@@ -119,6 +119,7 @@ fabric.properties
 2018-03-24_small-2/
 IS2017/
 configs/Batch runner.sh
+configs/
 
 # prom stuff
 prom-6.5.1/2018-03-26 packages/
@@ -126,11 +127,17 @@ prom-6.5.1/ProM651_lib_052017/
 prom-6.5.1/packages_052017/
 prom-6.5.1/testMonolithicReplayBoot.jar
 prom-6.5.1/testRecomposingReplayBoot.jar
+prom-6.5.1/
 
 # results
 results/2018-03-26 IS2017/
+results/
 
 # data
 data/synthetic/
 data/test/P307/dirty/
 data/test/net1/
+data/
+
+podspy/
+misc/
