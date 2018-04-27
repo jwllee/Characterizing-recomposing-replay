@@ -160,6 +160,7 @@ class Experiment:
                     use_hide_n_reduce=self.configs['use_hide_n_reduce'],
                     init_decomp_file=init_decomp_file,
                     decomposition=self.configs['decomposition'],
+                    prefer_border_transitions=self.configs['prefer_border_transitions'],
                     model=model, log=log, model_fpath=model_fpath, log_fpath=log_fpath,
                     recompose_strategy=self.configs['recompose_strategy'],
                     log_creation_strategy=self.configs['log_creation_strategy']
@@ -180,6 +181,7 @@ class Experiment:
                     use_hide_n_reduce=self.configs['use_hide_n_reduce'],
                     init_decomp_file=init_decomp_file,
                     decomposition=self.configs['decomposition'],
+                    prefer_border_transitions=self.configs['prefer_border_transitions'],
                     model=model, log=log, model_fpath=model_fpath, log_fpath=log_fpath
                 )
             configs_fpath = self.write_config_file(replay_id, configs)

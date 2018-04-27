@@ -23,8 +23,8 @@ logger = logging.getLogger(__name__)
 
 class ReplayerConfiguration(object):
     HEADER = ['_id', 'LogPath', "ModelPath", 'Log', 'Model', 'Monolithic',
-              'Decomposition', 'GlobalDurationThreshold', 'LocalDurationThreshold',
-              'LogMoveCost', 'ModelMoveCost',
+              'Decomposition', 'PreferBorderTransitions', 'GlobalDurationThreshold',
+              'LocalDurationThreshold', 'LogMoveCost', 'ModelMoveCost',
               'RelativeIntervalThreshold', 'AbsoluteIntervalThreshold',
               'MaxConflictThreshold', 'AlignmentPercentageThreshold',
               'MaxIterationThreshold', 'CostIntervalLo', 'CostIntervalHi',
@@ -68,8 +68,8 @@ class RecompositionReplayerConfiguration(ReplayerConfiguration):
                  global_duration, local_duration,
                  interval_relative, interval_absolute,
                  max_conflicts, alignment_percentage,
-                 nb_of_iterations, use_hide_n_reduce, decomposition,
-                 init_decomp_file, model, log, model_fpath, log_fpath):
+                 nb_of_iterations, use_hide_n_reduce, prefer_border_transitions,
+                 decomposition, init_decomp_file, model, log, model_fpath, log_fpath):
         self.replay_config = replay_config
         self.replay_id = replay_id
         self.outfile = outfile
@@ -83,6 +83,7 @@ class RecompositionReplayerConfiguration(ReplayerConfiguration):
         self.alignment_percentage = alignment_percentage
         self.nb_of_iterations = nb_of_iterations
         self.use_hide_n_reduce = use_hide_n_reduce
+        self.prefer_border_transitions = prefer_border_transitions
         self.decomposition = decomposition
         self.init_decomp_file = init_decomp_file
         self.model = model
@@ -103,6 +104,7 @@ class RecompositionReplayerConfiguration(ReplayerConfiguration):
                       'alignmentPercentage': self.alignment_percentage,
                       'nofIterations': self.nb_of_iterations,
                       'useHideAndReduceAbstraction': self.use_hide_n_reduce,
+                      'preferBorderTransitions': self.prefer_border_transitions,
                       'decomposition': self.decomposition,
                       'initDecompFile': self.init_decomp_file,
                       'model': self.model,
