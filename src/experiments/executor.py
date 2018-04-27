@@ -24,7 +24,7 @@ logger = logging.getLogger(__name__)
 class ProMPluginExecutor(object):
 
     def __init__(self, basedir, configs_fpath, memory, prom_jar,
-                 prom_pkg, plugin_jar, main_class, logfile):
+                 prom_pkg, plugin_jar, main_class, logfile=None):
         self.basedir = basedir
         self.configs_fpath = configs_fpath
         self.memory = memory
@@ -66,4 +66,7 @@ class ProMPluginExecutor(object):
                                                  configs_fpath=self.configs_fpath)
         logger.info('Calling: {}'.format(command))
         logger.info('Current working directory: {}'.format(os.getcwd()))
-        subprocess.call(command, shell=True, stdout=self.logfile)
+        if self.logfile == None:
+            subprocess.call(command, shell=True)
+        else:
+            subprocess.call(command, shell=True, stdout=self.logfile)
