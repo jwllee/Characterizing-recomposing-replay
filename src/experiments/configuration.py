@@ -23,8 +23,11 @@ logger = logging.getLogger(__name__)
 
 class ReplayerConfiguration(object):
     HEADER = ['_id', 'LogPath', "ModelPath", 'Log', 'Model', 'Monolithic',
-              'Decomposition', 'PreferBorderTransitions', 'GlobalDurationThreshold',
-              'LocalDurationThreshold', 'LogMoveCost', 'ModelMoveCost',
+              'Decomposition', 'RecomposeStrategy', 'LogCreationStrategy',
+              'PreferBorderTransitions', 'AddConflictOnlyOnce',
+              'UseHideAndReduceAbstraction',
+              'GlobalDurationThreshold', 'LocalDurationThreshold',
+              'LogMoveCost', 'ModelMoveCost',
               'RelativeIntervalThreshold', 'AbsoluteIntervalThreshold',
               'MaxConflictThreshold', 'AlignmentPercentageThreshold',
               'MaxIterationThreshold', 'CostIntervalLo', 'CostIntervalHi',
@@ -68,7 +71,8 @@ class RecompositionReplayerConfiguration(ReplayerConfiguration):
                  global_duration, local_duration,
                  interval_relative, interval_absolute,
                  max_conflicts, alignment_percentage,
-                 nb_of_iterations, use_hide_n_reduce, prefer_border_transitions,
+                 nb_of_iterations, use_hide_n_reduce,
+                 prefer_border_transitions, add_conflict_only_once,
                  decomposition, init_decomp_file, model, log, model_fpath, log_fpath):
         self.replay_config = replay_config
         self.replay_id = replay_id
@@ -84,6 +88,7 @@ class RecompositionReplayerConfiguration(ReplayerConfiguration):
         self.nb_of_iterations = nb_of_iterations
         self.use_hide_n_reduce = use_hide_n_reduce
         self.prefer_border_transitions = prefer_border_transitions
+        self.add_conflict_only_once = add_conflict_only_once
         self.decomposition = decomposition
         self.init_decomp_file = init_decomp_file
         self.model = model
@@ -105,6 +110,7 @@ class RecompositionReplayerConfiguration(ReplayerConfiguration):
                       'nofIterations': self.nb_of_iterations,
                       'useHideAndReduceAbstraction': self.use_hide_n_reduce,
                       'preferBorderTransitions': self.prefer_border_transitions,
+                      'addConflictOnlyOnce': self.add_conflict_only_once,
                       'decomposition': self.decomposition,
                       'initDecompFile': self.init_decomp_file,
                       'model': self.model,
