@@ -25,7 +25,7 @@ if __name__ == '__main__':
         '..', '..', 'data', 'synthetic', '2018-05-01_small'
     )
 
-    nb_traces = 2000
+    nb_traces = 1000
     factory = XFactory()
 
     print(os.listdir(datadir))
@@ -33,10 +33,10 @@ if __name__ == '__main__':
     for dir in os.listdir(datadir):
         if not os.path.isdir(os.path.join(datadir, dir)):
             continue
-        outdir = os.path.join(datadir, dir, 'l2000')
+        outdir = os.path.join(datadir, dir, 'l1000')
         os.makedirs(outdir)
 
-        for xlog_filepath in os.listdir(os.path.join(datadir, dir)):
+        for xlog_filepath in os.listdir(os.path.join(datadir, dir, 'l5000')):
             if '.xes.gz' not in xlog_filepath:
                 continue
 
@@ -48,7 +48,7 @@ if __name__ == '__main__':
             assert isinstance(xlog, XLog)
 
             new_xlog = factory.create_log(xlog.get_attributes())
-            traces = np.random.choice(xlog, nb_traces)
+            traces = np.random.choice(xlog, nb_traces, replace=False)
             new_xlog.get_classifiers().append(xlog.get_classifiers()[0])
 
             for t in traces:
