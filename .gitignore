@@ -119,7 +119,13 @@ fabric.properties
 2018-03-24_small-2/
 IS2017/
 configs/Batch runner.sh
-configs/
+configs/2018-03-25\ Old\ configurations/
+configs/2018-04-02_small/
+configs/2018-04-04_small/
+configs/2018-04-24_small/
+configs/2018-04-30_small/
+configs/BPIC12/
+configs/Batch\ runner.sh
 
 # prom stuff
 prom-6.5.1/2018-03-26 packages/
