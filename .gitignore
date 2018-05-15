@@ -127,6 +127,12 @@ prom-6.5.1/ProM651_lib_052017/
 prom-6.5.1/packages_052017/
 prom-6.5.1/testMonolithicReplayBoot.jar
 prom-6.5.1/testRecomposingReplayBoot.jar
+prom-6.5.1/packages_18042018/
+prom-6.5.1/packages_24042018/
+prom-6.5.1/packages_26032018/
+prom-6.5.1/packages_28042018/
+prom-6.5.1/Old\ boot\ jars/
+prom-6.5.1/test_results/
 
 # results
 results/2018-03-26 IS2017/
@@ -140,3 +146,4 @@ data/
 
 podspy/
 misc/
+src/preprocess/add_swap_noise.py
