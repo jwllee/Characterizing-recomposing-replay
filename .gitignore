@@ -127,6 +127,29 @@ configs/2018-04-30_small/
 configs/BPIC12/
 configs/Batch\ runner.sh
 
+# specific experimental configs
+configs/BPIC18/Decomposition/
+configs/BPIC18/FindSharedActivities/
+configs/BPIC18/Metric/
+configs/BPIC18/Replay/Debug-RGraph-LExclude-S-M15/
+configs/BPIC18/Replay/default/
+configs/BPIC18/Replay/RFiveConflictSetGraph-LExclude-S-M15/
+configs/BPIC18/Replay/RLazy-LAll-S-M15/
+configs/BPIC18/Replay/RLazy-LExclude-S-M15/
+configs/BPIC18/Replay/RLazy-LGroup-S-M15/
+configs/BPIC18/Replay/All\ batch\ runner.sh
+configs/BPIC18/Replay/Exclude\ batch\ runner.sh
+configs/BPIC18/Replay/Group\ batch\ runner.sh
+
+configs/2018-05-01_small/Replay/Debug-RGraph-LExclude-S-M15/
+configs/2018-05-01_small/Replay/default/
+configs/2018-05-01_small/Replay/RLazy-LAll-S-M15/
+configs/2018-05-01_small/Replay/RLazy-LGroup-S-M15/
+configs/2018-05-01_small/Replay/RLazy-LExclude-S-M15/
+configs/2018-05-01_small/All\ batch\ runner.sh
+configs/2018-05-01_small/Exclude\ batch\ runner.sh
+configs/2018-05-01_small/Group\ batch\ runner.sh
+
 # prom stuff
 prom-6.5.1/2018-03-26 packages/
 prom-6.5.1/ProM651_lib_052017/
