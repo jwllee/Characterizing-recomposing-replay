@@ -202,5 +202,5 @@ subprocess\ logs/
 BPI\ Challenge\ 2018.xes.gz
 
 podspy/
-misc/
+misc/Analyze\ alignments/
 src/preprocess/add_swap_noise.py
