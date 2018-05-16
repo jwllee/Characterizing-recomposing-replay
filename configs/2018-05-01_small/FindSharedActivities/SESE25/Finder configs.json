@@ -1,0 +1,13 @@
+{
+  "basedir": "..",
+  "datadir": "data/synthetic/2018-05-01_small",
+  "data_to_run": "configs/2018-05-01_small/FindSharedActivities/SESE25/toRun.txt",
+
+  "memory": 6,
+  "prom_jar": "ProM651.jar",
+  "plugin_jar": "2018-03-29_APN_decomposer_boot.jar",
+  "prom_pkg": "ProM651_lib",
+  "main_class": "org.processmining.experiments.boot.TestSharedActivitiesBoot",
+  "net_array_ext": "apna"
+
+}

@@ -1,0 +1,17 @@
+{
+  "basedir": "..",
+  "datadir": "data/synthetic/2018-05-01_small",
+  "data_to_decompose": "configs/2018-05-01_small/Decomposition/Generic50/toDecompose.txt",
+
+  "memory": 6,
+  "prom_jar": "ProM651.jar",
+  "plugin_jar": "2018-03-29_APN_decomposer_boot.jar",
+  "prom_pkg": "ProM651_lib",
+  "main_class": "org.processmining.experiments.boot.TestAcceptingPetriNetDecompositionBoot",
+  "model_ext": "apnml",
+
+  "classifier_type": "conceptName",
+  "decomposition_strategy": "Generic",
+  "include_cluster_trans": false,
+  "percentage": 50
+}

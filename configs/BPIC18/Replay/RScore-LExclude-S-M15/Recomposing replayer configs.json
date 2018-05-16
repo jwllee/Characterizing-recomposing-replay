@@ -1,0 +1,33 @@
+{
+  "basedir": "..",
+  "result_dir": "results",
+  "datadir": "data/real",
+  "data_to_run": "configs/BPIC18/Replay/RScore-LExclude-S-M15/toRun.txt",
+  "experiment_name": "BPIC18_R_score_L_exclude_S_M15",
+
+  "memory": 6,
+  "prom_jar": "ProM651.jar",
+  "plugin_jar": "2018-05-01_Recomposing_replay_with_merge_strategy_boot.jar",
+  "prom_pkg": "ProM651_lib",
+  "main_class": "org.processmining.decomposedreplayer.experiments.boot.TestRecomposingReplayWithMergeStrategyBoot",
+  "model_ext": "apnml",
+  "log_ext": "xes.gz",
+
+  "is_monolithic": false,
+  "replay_config": "Decompose",
+  "move_on_log_costs": 10,
+  "move_on_model_costs": 4,
+  "global_duration": 1800000,
+  "local_duration": 80000,
+  "interval_relative": 100,
+  "interval_absolute": 0,
+  "max_conflicts": 100,
+  "alignment_percentage": 100,
+  "nb_of_iterations": 200,
+  "use_hide_n_reduce": true,
+  "prefer_border_transitions": false,
+  "add_conflict_only_once": true,
+  "decomposition": "generic_100",
+  "recompose_strategy": "Score-based",
+  "log_creation_strategy": "Strict exclude by conflicts"
+}

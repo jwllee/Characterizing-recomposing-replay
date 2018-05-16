@@ -1,0 +1,5 @@
+net1, generic_50, generic_50
+net2, generic_50, generic_50
+net3, generic_50, generic_50
+net4, generic_50, generic_50
+net5, generic_50, generic_50

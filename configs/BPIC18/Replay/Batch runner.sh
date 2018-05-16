@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+# sh "./configs/BPIC18/Replay/RAll-LAll-S-M15/Runner.sh"
+# sh "./configs/BPIC18/Replay/RRandom-LAll-S-M15/Runner.sh"
+sh "./configs/BPIC18/Replay/RScore-LGroup-S-M15/Runner.sh"
+sh "./configs/BPIC18/Replay/RScore-LAll-S-M15/Runner.sh"
+sh "./configs/BPIC18/Replay/RScore-LExclude-S-M15/Runner.sh"
+# sh "./configs/BPIC18/Replay/RGraph-LGroup-S-M15/Runner.sh"
+# sh "./configs/BPIC18/Replay/ROneMostFreqSet-LExclude-S-M15/Runner.sh"
+# sh "./configs/BPIC18/Replay/RMostFreq-LGroup-S-M15/Runner.sh"
+# sh "./configs/BPIC18/Replay/RAll-LGroup-S-M15/Runner.sh"
+# sh "./configs/BPIC18/Replay/RRandom-LGroup-S-M15/Runner.sh"
+# sh "./configs/BPIC18/Replay/RThreeMostFreqSet-LExclude-S-M15/Runner.sh"
+# sh "./configs/BPIC18/Replay/RFiveMostFreqSet-LExclude-S-M15/Runner.sh"
+# sh "./configs/BPIC18/Replay/RTenMostFreqSet-LExclude-S-M15/Runner.sh"
+# sh "./configs/BPIC18/Replay/RFiveConflictSetGraph-LExclude-S-M15/Runner.sh"

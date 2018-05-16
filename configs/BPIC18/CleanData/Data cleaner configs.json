@@ -1,0 +1,18 @@
+{
+  "basedir": "..",
+  "datadir": "data/synthetic/2018-05-01_small",
+  "data_to_clean": "configs/2018-05-01_small/CleanData/toClean.txt",
+
+  "memory": 6,
+  "prom_jar": "ProM651.jar",
+  "plugin_jar": "2018-04-25_Data_cleaner.jar",
+  "prom_pkg": "ProM651_lib",
+  "main_class": "org.processmining.experiments.boot.DataCleanerBoot",
+
+  "model_dirname": "",
+  "log_dirty_ext": "xes.gz",
+  "model_dirty_ext": "pnml",
+  "log_clean_ext": "xes.gz",
+  "model_clean_ext": "apnml",
+  "classifier_type": "conceptName"
+}

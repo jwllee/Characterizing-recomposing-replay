@@ -1,0 +1,21 @@
+{
+  "basedir": "..",
+  "result_dir": "results",
+  "datadir": "data/real",
+  "data_to_run": "configs/BPIC18/Replay/Monolithic-M15/toRun.txt",
+  "experiment_name": "BPIC18_monolithic_M15",
+
+  "memory": 6,
+  "prom_jar": "ProM651.jar",
+  "plugin_jar": "2018-05-01_Monolithic_replay_boot.jar",
+  "prom_pkg": "ProM651_lib",
+  "main_class": "org.processmining.experiments.boot.TestDecomposedReplayBoot",
+  "model_ext": "apnml",
+  "log_ext": "xes.gz",
+
+  "is_monolithic": true,
+  "replay_config": "Do not decompose",
+  "deadline": 1800000,
+  "move_on_log_costs": 10,
+  "move_on_model_costs": 4
+}

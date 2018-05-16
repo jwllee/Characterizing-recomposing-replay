@@ -1,0 +1,15 @@
+net1, net1-10-10
+net1, net1-10-60
+net1, net1-60-10
+net2, net2-10-10
+net2, net2-10-60
+net2, net2-60-10
+net3, net3-10-10
+net3, net3-10-60
+net3, net3-60-10
+net4, net4-10-10
+net4, net4-10-60
+net4, net4-60-10
+net5, net5-10-10
+net5, net5-10-60
+net5, net5-60-10
