@@ -172,6 +172,7 @@ data/test/P307/dirty/
 data/test/net1/
 data/synthetic/2018-03-24_small-2/
 data/synthetic/2018-04-02_small/
+data/synthetic/2018-04-04_small/
 data/synthetic/2018-04-24_small/
 data/synthetic/2018-04-30_small/
 data/synthetic/BPIC12/
@@ -179,6 +180,24 @@ data/synthetic/BPM2013/
 data/synthetic/IS2013/
 data/synthetic/IS2017/
 data/real/BPIC12/
+
+# ignore extra event logs
+l1000/
+l2000/
+l5000/
+# ignore decomposed net arrays
+generic_25/
+generic_50/
+sese_25/
+sese_10/
+# ignore dirty files
+dirty/
+# ignore intermediate results
+mined/
+handmade/
+sampled\ logs/
+subprocess\ logs/
+BPI\ Challenge\ 2018.xes.gz
 
 podspy/
 misc/
