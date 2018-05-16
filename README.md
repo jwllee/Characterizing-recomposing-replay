@@ -81,4 +81,15 @@ Concretely, five Petri nets are generated from a triangular distribution with pa
 For each Petri net model, four event logs are generated. All logs have 1000 cases and contains noises of different profiles. Noise characteristics are configured by varying the *noise percentage* (noise occurrence), i.e., the probability that noise will occur, and *event percentage* (noise spread), i.e., the percentage of events in a trace that noise will be applied to. The four noise configurations are created by all the combinations of low, i.e., 10%, and high, i.e., 60%, configurations of the noise occurrence and noise spread.
 
 #### Real-life dataset
+The BPIC18 dataset is used as the real-life dataset. However, due to the size of the event log and the absence of a normative model, analysis is done on the event data involving three sub-processs, namely, the Entitlement, Payment, and Inspection document types, and descriptive models discovered using inductive miner. 
+
+The following steps are done to create the corresponding event log which has 500 cases and the Petri net model:
+1. The full event log is filtered to include only traces of length 100 to 500 events since we are interested in getting a larger log and model.
+2. The log is filtered by document types to get the events involved with the document types: entitlement application, payment application, remote inspection and onsite inspection. In total, four filtered event logs are created. Moreover, to avoid discovering spaghetti models, several less important and spaghetti prone activities, e.g., insert + delete documents, are filtered out. Also, less frequent paths are also filtered out. All the standard preprocessings are done manually using Disco.
+3. Corresponding models are then mined from the filtered logs.
+4. After inspecting the full event log, it seems that the entitlement application and payment application can be concurrently executed while inspection comes after the two document types. As such, the four models (entitlement, payment, remote inspection, and onsite) are joined together. Similarly, the corresponding event log involving all four document types is created. 
+5. To keep replay time reasonable, 500 cases are sampled from the log from Step 4.
+
+##### Mined Petri net model
+~[](https://github.com/)
 
