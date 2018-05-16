@@ -165,7 +165,9 @@ prom-6.5.1/test_results/
 
 # results
 results/2018-03-26 IS2017/
-results/
+results/2018-*
+results/Before\ 2018-05-04/
+results/Final\ 20180501\ iterations/
 
 # data
 data/test/P307/dirty/
