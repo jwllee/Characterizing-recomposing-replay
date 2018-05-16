@@ -146,9 +146,9 @@ configs/2018-05-01_small/Replay/default/
 configs/2018-05-01_small/Replay/RLazy-LAll-S-M15/
 configs/2018-05-01_small/Replay/RLazy-LGroup-S-M15/
 configs/2018-05-01_small/Replay/RLazy-LExclude-S-M15/
-configs/2018-05-01_small/All\ batch\ runner.sh
-configs/2018-05-01_small/Exclude\ batch\ runner.sh
-configs/2018-05-01_small/Group\ batch\ runner.sh
+configs/2018-05-01_small/Replay/All\ batch\ runner.sh
+configs/2018-05-01_small/Replay/Exclude\ batch\ runner.sh
+configs/2018-05-01_small/Replay/Group\ batch\ runner.sh
 
 # prom stuff
 prom-6.5.1/2018-03-26 packages/
