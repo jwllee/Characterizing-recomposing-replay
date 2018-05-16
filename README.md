@@ -3,12 +3,12 @@
 
 ### TL;DR
 This repository includes and details the experimental setup for the BPI paper. As such, the repository includes the following content:
-- Experimental setup code 
-- ProM plugin jars so that the versions are fixed for reproducibility purpose
-- Datasets (nets, logs, net decomposition) used for the paper 
+- [Experimental setup code](https://github.com/wailamjonathanlee/Characterizing-recomposing-replay/tree/master/src)
+- [ProM plugin jars](https://github.com/wailamjonathanlee/Characterizing-recomposing-replay/tree/master/prom-6.5.1) so that the versions are fixed for reproducibility purpose
+- [Datasets](https://github.com/wailamjonathanlee/Characterizing-recomposing-replay/tree/master/data) (nets, logs, net decomposition) used for the paper 
 - Data generation and selection (synthetic and real-life)
-- Experimental results 
-- Jupyter notebooks used to generate the figures
+- [Experimental results](https://github.com/wailamjonathanlee/Characterizing-recomposing-replay/tree/master/results/Final%20results)
+- [Jupyter notebooks](https://github.com/wailamjonathanlee/Characterizing-recomposing-replay/tree/master/results/Final%20results/jupyter) used to generate the figures
 
 ### How to run experiments?
 #### Overview:
@@ -90,6 +90,6 @@ The following steps are done to create the corresponding event log which has 500
 4. After inspecting the full event log, it seems that the entitlement application and payment application can be concurrently executed while inspection comes after the two document types. As such, the four models (entitlement, payment, remote inspection, and onsite) are joined together. Similarly, the corresponding event log involving all four document types is created. 
 5. To keep replay time reasonable, 500 cases are sampled from the log from Step 4.
 
-##### Mined Petri net model
+##### Mined BPIC18 Petri net model
 ![Screenshot](misc/BPIC18.jpg)
 
