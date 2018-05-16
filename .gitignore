@@ -168,10 +168,17 @@ results/2018-03-26 IS2017/
 results/
 
 # data
-data/synthetic/
 data/test/P307/dirty/
 data/test/net1/
-data/
+data/synthetic/2018-03-24_small-2/
+data/synthetic/2018-04-02_small/
+data/synthetic/2018-04-24_small/
+data/synthetic/2018-04-30_small/
+data/synthetic/BPIC12/
+data/synthetic/BPM2013/
+data/synthetic/IS2013/
+data/synthetic/IS2017/
+data/real/BPIC12/
 
 podspy/
 misc/
