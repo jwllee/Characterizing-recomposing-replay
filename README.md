@@ -88,7 +88,7 @@ The following steps are done to create the corresponding event log which has 500
 2. The log is filtered by document types to get the events involved with the document types: entitlement application, payment application, remote inspection and onsite inspection. In total, four filtered event logs are created. Moreover, to avoid discovering spaghetti models, several less important and spaghetti prone activities, e.g., insert + delete documents, are filtered out. Also, less frequent paths are also filtered out. All the standard preprocessings are done manually using Disco.
 3. Corresponding models are then mined from the filtered logs.
 4. After inspecting the full event log, it seems that the entitlement application and payment application can be concurrently executed while inspection comes after the two document types. As such, the four models (entitlement, payment, remote inspection, and onsite) are joined together. Similarly, the corresponding event log involving all four document types is created. 
-5. To keep replay time reasonable, 500 cases are sampled from the log from Step 4.
+5. To keep replay time reasonable, 500 cases are sampled from the log from Step 4. Note that the net characteristics can be found [here](https://github.com/wailamjonathanlee/Characterizing-recomposing-replay/tree/master/data/real/BPIC18/metrics.csv)
 
 ##### Mined BPIC18 Petri net model
 ![Screenshot](misc/BPIC18.jpg)
