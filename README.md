@@ -91,5 +91,5 @@ The following steps are done to create the corresponding event log which has 500
 5. To keep replay time reasonable, 500 cases are sampled from the log from Step 4.
 
 ##### Mined Petri net model
-~[](https://github.com/)
+![](https://github.com/wailamjonathanlee/Characterizing-recomposing-replay/tree/master/misc/BPIC18.jpg "Joined Petri net model for BPIC18")
 
