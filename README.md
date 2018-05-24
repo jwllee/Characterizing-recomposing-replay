@@ -12,6 +12,8 @@ This repository includes and details the experimental setup for the BPI paper. A
 
 ### How to run experiments?
 #### Overview:
+(**Warning**: the experimental setup has only been tested on Ubuntu 16.04 and it is quite likely that it will not work straightaway on Macs because it does not have the LPSolve compilation for Macs)
+
 To automate the experiments, ProM plugin classes are written so that parameters are passed as JSON files and calls to the actual plugin classes are made and results are recorded accordingly. For example, in the jar **2018-05-01_Recomposing_replay_boot.jar**, there is a class called ```TestRecomposingReplayWithMergeStrategyBoot``` which takes a JSON configuration file and boots the ProM plugin class ```TestRecomposingReplayWithMergeStrategy``` which in turn constructs and executes ```RecomposingReplayWithMergeStrategy```, the actual ProM plugin class.
 
 Running the experiment by calling the executable will output results and a copy of the configuration at the designated result directory.
