@@ -1,6 +1,11 @@
 # BPI 2018: Improving merging conditions for recomposing conformance checking
 ##### Wai Lam Jonathan Lee, Jorge Munoz-Gama, H.M.W. Verbeek, Wil M.P. van der Aalst, Marcos Sepulveda
 
+### License
+This is written by Wai Lam Jonathan Lee, and he disclaims all copyright interest.
+
+Since this is mostly code for ProM 6, therefore everything here is just included under the **[Lesser GNU Public License (L-GPL)](https://www.gnu.org/licenses/lgpl-3.0.en.html)** open source license. As per [instructions](https://www.gnu.org/licenses/gpl-howto.en.html), a copy of the license is included as [COPYING](https://github.com/wailamjonathanlee/Characterizing-recomposing-replay/blob/master/COPYING), and [COPYING.LESSER](https://github.com/wailamjonathanlee/Characterizing-recomposing-replay/blob/master/COPYING.LESSER).
+
 ### TL;DR
 This repository includes and details the experimental setup for the BPI paper. As such, the repository includes the following content:
 - [Experimental setup code](https://github.com/wailamjonathanlee/Characterizing-recomposing-replay/tree/master/src)
