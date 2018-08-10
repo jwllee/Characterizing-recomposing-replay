@@ -7,7 +7,7 @@
 
   "memory": 6,
   "prom_jar": "ProM651.jar",
-  "plugin_jar": "2018-05-01_Recomposing_replay_with_merge_strategy_boot.jar",
+  "plugin_jar": "2018-07-30_Recomposing_replay_with_merge_strategy_boot_with_stateinfo.jar",
   "prom_pkg": "ProM651_lib",
   "main_class": "org.processmining.decomposedreplayer.experiments.boot.TestRecomposingReplayWithMergeStrategyBoot",
   "model_ext": "apnml",

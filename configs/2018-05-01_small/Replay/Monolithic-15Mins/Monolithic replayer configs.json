@@ -7,7 +7,7 @@
 
   "memory": 6,
   "prom_jar": "ProM651.jar",
-  "plugin_jar": "2018-05-01_Monolithic_replay_boot.jar",
+  "plugin_jar": "2018-07-30_Monolithic_replay_boot_with_state_info.jar",
   "prom_pkg": "ProM651_lib",
   "main_class": "org.processmining.experiments.boot.TestDecomposedReplayBoot",
   "model_ext": "apnml",
