@@ -1,9 +1,0 @@
-Model, Log, Iteration, NofTraceToAlign, NofAlignmentValid, NofAlignmentOpen, NofAlignmentRejected, NofLeftOutTraces, NofSubnets, NofRecomposeActivities, NofBorderActivities
-BPIC18, BPIC18-entitlement-payment-inspection-500, 1, 490, 1, 489, 0, 0, -1, -1, -1
-BPIC18, BPIC18-entitlement-payment-inspection-500, 2, 489, 0, 489, 0, 0, 49, 25, 38
-BPIC18, BPIC18-entitlement-payment-inspection-500, 3, 489, 0, 489, 0, 0, 19, 5, 25
-BPIC18, BPIC18-entitlement-payment-inspection-500, 4, 489, 5, 484, 0, 0, 14, 6, 18
-BPIC18, BPIC18-entitlement-payment-inspection-500, 5, 484, 0, 484, 0, 0, 10, 4, 13
-BPIC18, BPIC18-entitlement-payment-inspection-500, 6, 484, 119, 365, 0, 0, 7, 4, 9
-BPIC18, BPIC18-entitlement-payment-inspection-500, 7, 365, 15, 350, 0, 0, 6, 1, 8
-BPIC18, BPIC18-entitlement-payment-inspection-500, 8, 350, 0, 0, 350, 0, 5, 1, 7

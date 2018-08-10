@@ -1,0 +1,10 @@
+Model, Log, Iteration, NofTraceToAlign, NofAlignmentValid, NofAlignmentOpen, NofAlignmentRejected, NofLeftOutTraces, NofSubnets, NofRecomposeActivities, NofBorderActivities
+BPIC12, BPIC12, 1, 13087, 332, 4034, 0, 0, -1, -1, -1
+BPIC12, BPIC12, 2, 1054, 0, 765, 0, 12033, 14, 1, 22
+BPIC12, BPIC12, 3, 812, 614, 0, 0, 12275, 12, 1, 21
+BPIC12, BPIC12, 4, 660, 553, 0, 0, 12427, 11, 3, 18
+BPIC12, BPIC12, 5, 5179, 741, 260, 0, 7908, 9, 1, 16
+BPIC12, BPIC12, 6, 1144, 1026, 101, 0, 11943, 8, 1, 15
+BPIC12, BPIC12, 7, 1230, 764, 0, 7, 11857, 7, 1, 14
+BPIC12, BPIC12, 8, 3502, 153, 14, 0, 9585, 6, 1, 12
+BPIC12, BPIC12, 9, 111, 100, 0, 7, 12976, 5, 1, 11
