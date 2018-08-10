@@ -32,7 +32,10 @@ class ReplayerConfiguration(object):
               'MaxConflictThreshold', 'AlignmentPercentageThreshold',
               'MaxIterationThreshold', 'CostIntervalLo', 'CostIntervalHi',
               'FitnessLo', 'FitnessHi', 'Aligned', 'ToAlign', 'Rejected',
-              'TotalTraces', 'RecompositionStepsTaken', 'TotalTimeTaken']
+              'TotalTraces', 'RecompositionStepsTaken', 'TotalTimeTaken', 
+              'TotalGeneratedStates', 'TotalQueuedStates',
+              'TotalTraversedArcs', 'AvgGenerateStates', 'AvgQueuedStates',
+              'AvgTraversedArcs']
 
 
 class MonolithicReplayerConfiguration(ReplayerConfiguration):
