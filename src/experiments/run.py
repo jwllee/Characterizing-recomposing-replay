@@ -91,8 +91,8 @@ class Experiment:
             log = to_run[1]
             model_fpath = '.'.join([model, self.configs['model_ext']])
             log_fpath = '.'.join([log, self.configs['log_ext']])
-            model_fpath = os.path.join(self.datadir, model, model_fpath)
-            log_fpath = os.path.join(self.datadir, model, log_fpath)
+            model_fpath = os.path.join(self.datadir, model_fpath)
+            log_fpath = os.path.join(self.datadir, log_fpath)
             # create a configuration dict for MonolithicReplayer
             configs = MonolithicReplayerConfiguration(
                 replay_config=self.configs['replay_config'],
@@ -136,8 +136,8 @@ class Experiment:
             log = to_run[1]
             model_fpath = '.'.join([model, self.configs['model_ext']])
             log_fpath = '.'.join([log, self.configs['log_ext']])
-            model_fpath = os.path.join(self.datadir, model, model_fpath)
-            log_fpath = os.path.join(self.datadir, model, log_fpath)
+            model_fpath = os.path.join(self.datadir, model_fpath)
+            log_fpath = os.path.join(self.datadir, log_fpath)
             # make initial decomposition filepath
             init_decomp_file = model + '.' + self.configs['decomposition']
             init_decomp_file = os.path.join(self.datadir, model, 'decomposition', init_decomp_file)
