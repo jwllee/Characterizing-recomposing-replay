@@ -1,0 +1,18 @@
+Log,Model
+initialize,initialize
+>>,invis
+>>,invis
+begin editing,>>
+finish editing,>>
+create,>>
+begin editing,>>
+create,>>
+calculate,calculate
+finish editing,>>
+clear,>>
+begin editing,begin editing
+finish editing,finish editing
+create,create
+>>,invis
+>>,invis
+>>,invis

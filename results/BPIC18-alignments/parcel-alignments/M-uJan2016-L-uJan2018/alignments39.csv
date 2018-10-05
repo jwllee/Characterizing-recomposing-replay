@@ -1,0 +1,38 @@
+Log,Model
+initialize,initialize
+begin editing,begin editing
+>>,[invisible]
+>>,invis
+>>,[invisible]
+>>,invis
+finish pre-check,>>
+create,>>
+save,save
+finish editing,finish editing
+begin editing,>>
+insert document,insert document
+>>,invis
+>>,invis
+save,save
+finish editing,finish editing
+>>,invis
+calculate,>>
+finish editing,finish editing
+>>,invis
+begin editing,>>
+insert document,>>
+save,save
+>>,invis
+finish editing,finish editing
+>>,invis
+begin editing,>>
+calculate,>>
+finish editing,finish editing
+>>,invis
+begin editing,>>
+calculate,>>
+finish editing,finish editing
+>>,invis
+>>,invis
+>>,invis
+>>,[invisible]

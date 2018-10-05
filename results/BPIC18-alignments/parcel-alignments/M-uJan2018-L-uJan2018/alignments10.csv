@@ -1,0 +1,109 @@
+Log,Model
+initialize,initialize
+>>,invis
+>>,invis
+begin editing,begin editing
+finish pre-check,finish pre-check
+>>,calculate
+finish editing,finish editing
+>>,invis
+>>,invis
+>>,invis
+>>,calculate
+finish editing,finish editing
+>>,invis
+>>,invis
+create,create
+>>,invis
+>>,invis
+begin editing,begin editing
+>>,invis
+>>,calculate
+>>,invis
+>>,invis
+>>,invis
+begin editing,begin editing
+>>,invis
+>>,calculate
+>>,invis
+>>,invis
+>>,invis
+create,create
+>>,invis
+>>,invis
+create,create
+>>,invis
+>>,invis
+>>,begin editing
+>>,invis
+save,>>
+save,>>
+calculate,calculate
+>>,invis
+>>,invis
+>>,invis
+finish pre-check,finish pre-check
+>>,calculate
+>>,invis
+>>,invis
+>>,invis
+save,>>
+finish pre-check,finish pre-check
+>>,calculate
+>>,invis
+>>,invis
+>>,invis
+save,>>
+save,>>
+finish pre-check,finish pre-check
+>>,calculate
+finish editing,finish editing
+>>,invis
+>>,invis
+begin editing,begin editing
+>>,invis
+>>,calculate
+>>,invis
+>>,invis
+>>,invis
+begin editing,begin editing
+insert document,>>
+save,>>
+finish pre-check,finish pre-check
+>>,calculate
+finish editing,finish editing
+>>,invis
+>>,invis
+begin editing,begin editing
+>>,invis
+calculate,calculate
+>>,invis
+>>,invis
+>>,invis
+>>,invis
+calculate,calculate
+>>,invis
+>>,invis
+>>,invis
+>>,invis
+calculate,calculate
+finish editing,finish editing
+>>,invis
+>>,invis
+begin editing,begin editing
+>>,invis
+calculate,calculate
+finish editing,finish editing
+>>,invis
+>>,invis
+begin editing,begin editing
+>>,invis
+calculate,calculate
+finish editing,finish editing
+>>,invis
+>>,invis
+begin editing,begin editing
+>>,invis
+calculate,calculate
+finish editing,finish editing
+>>,invis

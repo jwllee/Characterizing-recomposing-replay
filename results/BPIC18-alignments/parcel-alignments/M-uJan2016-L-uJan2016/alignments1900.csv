@@ -1,0 +1,20 @@
+Log,Model
+initialize,initialize
+begin editing,begin editing
+>>,invis
+>>,invis
+insert document,insert document
+>>,invis
+save,save
+>>,invis
+check,>>
+save,save
+>>,invis
+save,save
+check,>>
+check,check
+finish editing,finish editing
+>>,invis
+>>,invis
+>>,invis
+>>,invis
